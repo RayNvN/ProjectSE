@@ -28,20 +28,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
 
-        binding.bottomNavigation.setOnItemReselectedListener(item -> {
-            if (item.getItemId() == R.id.home){
+        binding.bottomNavigation.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.menu_home){
                 replaceFragment(new HomeFragment());
-            } else if (item.getItemId() == R.id.history) {
+            } else if (item.getItemId() == R.id.menu_history) {
                 replaceFragment(new HistoryFragment());
-            } else if (item.getItemId() == R.id.reward) {
+            } else if (item.getItemId() == R.id.menu_reward){
                 replaceFragment(new RewardFragment());
-            } else if (item.getItemId() == R.id.goals) {
+            } else if (item.getItemId() == R.id.menu_goals) {
                 replaceFragment(new GoalsFragment());
-            } else if (item.getItemId() == R.id.profile) {
+            } else if (item.getItemId() == R.id.menu_profile) {
                 replaceFragment(new ProfileFragment());
             }
 
+
+            return true;
         });
+
     }
 
     private void replaceFragment(Fragment fragment){
