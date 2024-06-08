@@ -51,10 +51,13 @@
             android:background="@drawable/box">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/currentlocaion"
                 android:layout_width="292dp"
                 android:layout_height="47dp"
                 android:background="@drawable/custominput"
+                android:labelFor="@+id/CurrentLocation"
+                android:hint="Current Location"
+                android:paddingLeft="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.484"
@@ -62,19 +65,36 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.085" />
 
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="47dp"
+                android:drawableLeft="@drawable/swap"
+                android:drawableTint="@color/white"
+                android:text="Swap"
+                android:background="@drawable/custombutton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="292dp"
+                android:layout_height="47dp"
+                android:background="@drawable/custominput"
+                android:hint="Destination"
+                android:labelFor="@+id/Destination"
+                android:paddingLeft="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.914" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
-    <ScrollView
-        android:layout_width="326dp"
-        android:layout_height="354dp"
-        android:background="@drawable/box"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
