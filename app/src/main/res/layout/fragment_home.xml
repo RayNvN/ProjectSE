@@ -51,7 +51,7 @@
             android:background="@drawable/box">
 
             <EditText
-                android:id="@+id/currentlocaion"
+                android:id="@+id/currentlocation"
                 android:layout_width="292dp"
                 android:layout_height="47dp"
                 android:background="@drawable/custominput"
